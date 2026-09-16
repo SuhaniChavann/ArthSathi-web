@@ -1,0 +1,136 @@
+{
+  "theme": "light",
+  "archetype": "Organic & Earthy mixed with Soft Utility",
+  "vibe": "High-end fintech/startup, trustworthy, human, easy for low-digital-literacy users, clean, classy",
+  "typography": {
+    "headings": {
+      "family": "Manrope, sans-serif",
+      "weights": ["400", "600", "800"],
+      "rules": "Use tight letter spacing (tracking-tight) for H1/H2. Never use Inter for headings."
+    },
+    "body": {
+      "family": "Inter, sans-serif",
+      "weights": ["400", "500"],
+      "rules": "Loose line height (leading-relaxed) for readability."
+    },
+    "labels": {
+      "rules": "Uppercase, tiny text with wide spacing (tracking-[0.2em]) for overlines and tags."
+    }
+  },
+  "colors": {
+    "primary": "#0A3B2C",
+    "primary_foreground": "#FFFFFF",
+    "secondary": "#F4F1EA",
+    "secondary_foreground": "#0A3B2C",
+    "accent": "#E76F51",
+    "background": "#FDFBF7",
+    "card": "#FFFFFF",
+    "border": "#E5E0D8",
+    "muted": "#F0EBE1",
+    "text_main": "#1C2321",
+    "text_muted": "#5C6B66",
+    "success_green": "#2A9D8F",
+    "warning_yellow": "#E9C46A"
+  },
+  "visual_enhancers": {
+    "shadows": "Soft ambient shadows combined with 1px borders to ground elements. Use shadow-[0_8px_30px_rgb(0,0,0,0.04)].",
+    "radius": "0.75rem (12px) to 1rem (16px) for cards, pill shapes for buttons.",
+    "textures": "Subtle noise overlay on solid backgrounds to remove digital flatness."
+  },
+  "grids_and_layouts": {
+    "desktop": "1440px max-width container. Multi-column, side panels for comparison, large maps. Use CSS Grid.",
+    "tablet": "1024px. Reflow to 2 columns where appropriate.",
+    "mobile": "390px. Single column, large touch targets (min 48px height), simple guided actions.",
+    "spacing": "Generous spacing. Use p-6, p-8, p-12. Containers with borders MUST have internal padding."
+  },
+  "components": {
+    "navigation": "Header with solid background or high-quality Crystal Glass (backdrop-blur-xl bg-white/70). Never fully transparent. Links EXACTLY: Home | Schemes | Applications | Connect | Grow | Profile.",
+    "buttons": "Pill-shaped (rounded-full) or large radius. Interactive hover states with slight lift and color shift.",
+    "cards": "Premium cards with soft shadows, subtle borders. Use framer-motion for hover lift.",
+    "stepper": "Journey progress stepper with clear, animated step transitions.",
+    "scheme_cards": "Must include animated match-score ring (SVG/Framer Motion).",
+    "voice_assistant": "Animated waveform (English/Hindi/Marathi).",
+    "map": "Large maps on desktop, animated map pins for channel partners.",
+    "eligibility": "Indicative eligibility states (Likely Eligible / Criteria Not Met / Further Verification Required)."
+  },
+  "motion": {
+    "page_transitions": "Smooth fade and slide up using framer-motion.",
+    "interactions": "Subtle image parallax, animated journey progress, scheme-card reveals (staggered), animated financial number transitions (framer-motion), document progress.",
+    "accessibility": "Respect prefers-reduced-motion."
+  },
+  "media_and_icons": {
+    "icons": "lucide-react for standard icons.",
+    "images": "High-quality, realistic Indian human photography on every major page.",
+    "image_urls": {
+      "entrepreneurs_and_shop_owners": [
+        {
+          "url": "https://images.pexels.com/photos/36317181/pexels-photo-36317181.jpeg",
+          "description": "Indian grocery store owner checking stock"
+        },
+        {
+          "url": "https://images.pexels.com/photos/35317008/pexels-photo-35317008.jpeg",
+          "description": "Street vendor in Varanasi with colorful products"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1761753088381-9fcaa087edae",
+          "description": "Street vendor selling books"
+        }
+      ],
+      "women_business_owners": [
+        {
+          "url": "https://images.pexels.com/photos/7580752/pexels-photo-7580752.jpeg",
+          "description": "Businesswoman organizing files at office desk"
+        },
+        {
+          "url": "https://images.pexels.com/photos/8837758/pexels-photo-8837758.jpeg",
+          "description": "South Asian woman multitasking in office"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1641810290430-c24d021d4ace",
+          "description": "Woman working on painting"
+        }
+      ],
+      "professionals_and_mentors": [
+        {
+          "url": "https://images.pexels.com/photos/7580644/pexels-photo-7580644.jpeg",
+          "description": "Business professionals discussing documents"
+        },
+        {
+          "url": "https://images.pexels.com/photos/7581115/pexels-photo-7581115.jpeg",
+          "description": "Confident businesswoman showcasing professionalism"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1649433658557-54cf58577c68",
+          "description": "Smiling Indian male professional"
+        }
+      ]
+    }
+  },
+  "3d_and_creative": {
+    "libraries": "Framer Motion",
+    "usage": "Use Framer Motion for match-score ring, financial calculator number transitions, and voice assistant waveform."
+  },
+  "instructions_to_main_agent": [
+    "Build a premium React + Tailwind + framer-motion hybrid application.",
+    "Do NOT build a traditional government portal. Use the defined typography (Manrope + Inter) and Earthy color palette.",
+    "Always apply `data-testid` to interactive elements.",
+    "Ensure high-quality photography is prominent on all pages.",
+    "Use Shadcn UI components for complex interactions but heavily customize them to remove the default 'Vercel' look.",
+    "Provide clear indicative eligibility states (Likely Eligible / Criteria Not Met / Further Verification Required) and NEVER present Likely Eligible as Approved.",
+    "Match Score != approval probability. Financial calculations are estimates. Freshness is not a guarantee.",
+    "Clearly identify DigiLocker, Udyam, ADPList, and ONDC as external services visually with badges.",
+    "Core journey: Profile -> Verify -> Requirement -> Recommendations -> Why This Scheme -> Eligibility -> Documents -> Financial Calculator -> Apply -> Channel Partner -> Mentor -> ONDC -> Seller Stories.",
+    "Ensure animations are lightweight, fast, and professional."
+  ],
+  "universal_guidelines_for_main_agent": [
+    "Do not center align the app container (.App { text-align: center; } is banned).",
+    "Never apply universal transitions (e.g., transition: all).",
+    "Use modern pill-shaped or rounded buttons.",
+    "Never use AI assistant emojis for icons.",
+    "Include micro-interactions on hover and focus.",
+    "Use sonner for toast notifications.",
+    "Create depth through layered design elements with z-index hierarchy and glassmorphism.",
+    "DO NOT use complete transparent background in header, overlays, any surface that has content under it.",
+    "All interactive and key informational elements MUST include a data-testid attribute."
+  ]
+}
