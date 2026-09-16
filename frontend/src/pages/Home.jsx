@@ -65,8 +65,8 @@ function Hero() {
           <Reveal delay={0.35} y={40}>
             <div className="img-frame relative aspect-[4/5] max-h-[560px] w-full shadow-[0_40px_80px_-30px_rgb(10,59,44,0.45)]">
               <motion.img
-                src={IMG.hero}
-                alt="Indian shop owner checking stock in her store"
+                src={IMG.proMan}
+                alt="Indian man planning to launch his own technology business"
                 style={{ y: imgY, scale: 1.15 }}
                 className="h-full w-full object-cover"
               />

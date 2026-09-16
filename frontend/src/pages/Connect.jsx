@@ -128,7 +128,7 @@ function Mentors() {
           ))}
         </Stagger>
         <Reveal className="img-frame hidden self-start overflow-hidden rounded-3xl lg:block">
-          <img src={IMG.proMan} alt="Indian mentor and professional smiling" className="aspect-[3/4]" loading="lazy" />
+          <img src={IMG.hero} alt="Experienced Indian shop owner who mentors new entrepreneurs" className="aspect-[3/4]" loading="lazy" />
         </Reveal>
       </div>
       <TrustNote>Domain mentors are matched to your business field — people who have actually run tailoring units, boutiques and MSME loan files.</TrustNote>
